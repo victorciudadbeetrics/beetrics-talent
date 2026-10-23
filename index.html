@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Beetrics Talent</title>
+<link rel="icon" href="assets/1bddd48b1c385c17c3aa6fa3116cbe56.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300..800;1,400..600&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#1b1b1d;overflow:hidden;font-family:Raleway,Arial,sans-serif}
+#stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+#deck{position:relative;width:1920px;height:1080px;transform-origin:center center;flex:none}
+.slide{position:absolute!important;inset:0;width:1920px;height:1080px;overflow:hidden;visibility:hidden;opacity:0;transition:opacity .35s ease}
+.slide.on{visibility:visible;opacity:1}
+.slide p,.slide h1,.slide h2,.slide h3,.slide ul,.slide ol{margin:0}
+.slide img{display:block}
+.slide.on [data-build-in]{animation:rise .6s ease both}
+.slide.on [data-build-in^="fade"]{animation-name:fade}
+.slide.on [data-build-in*=" 2 "]{animation-delay:.25s}
+.slide.on [data-build-in*=" 3 "]{animation-delay:.5s}
+.slide.on [data-build-in*=" 4 "]{animation-delay:.75s}
+.slide.on [data-build-in*=" 5 "]{animation-delay:1s}
+@keyframes rise{from{opacity:0;translate:0 24px}to{opacity:1;translate:0 0}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.slide.on [data-build-in]{animation:none}.slide{transition:none}}
+#nav{position:fixed;left:50%;bottom:16px;translate:-50% 0;display:flex;align-items:center;gap:8px;padding:6px;border-radius:999px;background:rgba(38,38,40,.82);color:#F5F3EE;font:500 14px/1 'IBM Plex Sans',Arial,sans-serif;backdrop-filter:blur(6px);opacity:.25;transition:opacity .2s}
+#nav:hover,#nav:focus-within,body.touch #nav{opacity:1}
+#nav button{all:unset;cursor:pointer;width:36px;height:36px;border-radius:50%;display:grid;place-items:center}
+#nav button:hover,#nav button:focus-visible{background:rgba(255,255,255,.14)}
+#count{min-width:56px;text-align:center}
+</style>
+</head>
+<body>
+<div id="stage"><div id="deck" role="region" aria-roledescription="presentación" aria-label="Beetrics Talent">
+<section class="slide" id="portada" data-transition="fade" style="background:#262628">
+  <iframe style="position:absolute; top:0; left:0; width:1920px; height:1080px;border:0;pointer-events:none" srcdoc="&lt;canvas id=&quot;c&quot; style=&quot;position:fixed;left:0;top:0;width:100%;height:100%&quot;&gt;&lt;/canvas&gt;&lt;script&gt;
+document.documentElement.style.background=&#x27;transparent&#x27;;document.body.style.margin=&#x27;0&#x27;;document.body.style.overflow=&#x27;hidden&#x27;;document.body.style.background=&#x27;transparent&#x27;;
+var c=document.getElementById(&#x27;c&#x27;),g=c.getContext(&#x27;2d&#x27;),W,H,R=window.devicePixelRatio||1,P=[],K=[&#x27;#FFD557&#x27;,&#x27;#FFD557&#x27;,&#x27;#FFD557&#x27;,&#x27;#A4FF07&#x27;,&#x27;#4388FF&#x27;,&#x27;#9C4CFF&#x27;,&#x27;#F5F3EE&#x27;,&#x27;#F5F3EE&#x27;];
+function sz(){W=innerWidth;H=innerHeight;c.width=W*R;c.height=H*R;g.setTransform(R,0,0,R,0,0)}sz();addEventListener(&#x27;resize&#x27;,sz);
+for(var i=0;110&gt;i;i++){var big=(i%13===0);P.push({x:W*(0.32+0.68*Math.sqrt(Math.random())),y:Math.random()*H,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,r:big?7+Math.random()*4:1.6+Math.random()*3,k:big?&#x27;#FFD557&#x27;:K[i%K.length],t:Math.random()*6.28})}
+function f(){g.clearRect(0,0,W,H);var i,j,a,b,dx,dy,d;for(i=0;P.length&gt;i;i++){a=P[i];a.x+=a.vx;a.y+=a.vy;a.t+=.018;if(W*.24&gt;a.x||a.x&gt;W)a.vx*=-1;if(0&gt;a.y||a.y&gt;H)a.vy*=-1}
+g.lineWidth=1.2;for(i=0;P.length&gt;i;i++)for(j=i+1;P.length&gt;j;j++){a=P[i];b=P[j];dx=a.x-b.x;dy=a.y-b.y;d=dx*dx+dy*dy;if(34000&gt;d){g.strokeStyle=&#x27;rgba(245,243,238,&#x27;+(.16*(1-d/34000)).toFixed(3)+&#x27;)&#x27;;g.beginPath();g.moveTo(a.x,a.y);g.lineTo(b.x,b.y);g.stroke()}}
+for(i=0;P.length&gt;i;i++){a=P[i];g.globalAlpha=.7+.3*Math.sin(a.t);g.fillStyle=a.k;g.shadowColor=a.k;g.shadowBlur=a.r&gt;6?28:10;g.beginPath();g.arc(a.x,a.y,a.r,0,6.283);g.fill()}g.globalAlpha=1;g.shadowBlur=0;requestAnimationFrame(f)}f();
+&lt;/script&gt;" aria-hidden="true" tabindex="-1"></iframe>
+  <div style="position:absolute; top:0; left:24px; width:1920px; height:1080px; display:flex; flex-direction:column; background:linear-gradient(90deg, #262628fa 0%, #262628e6 42%, #26262800 80%)">
+  </div>
+  <img src="assets/f84dbeeab3fe8aa9a6dc7dd25ffc8374.svg" alt="Beetrics" data-build-in="fade 1 auto" style="position:absolute; top:236px; left:128px; width:340px; height:91px; object-fit:contain">
+  <h1 data-build-in="rise 2 auto" style="position:absolute; top:340px; left:120px; width:1000px; font-family:Raleway, Arial, sans-serif; font-size:160px; font-weight:800; line-height:1.1; letter-spacing:-4px; color:#f5f3ee">Talent</h1>
+  <p data-build-in="rise 3 auto" style="position:absolute; top:540px; left:128px; width:1100px; font-family:Raleway, Arial, sans-serif; font-size:28px; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:#ffd557">Predictive Science for Smarter Organizations</p>
+  <h2 data-build-in="rise 4 auto" style="position:absolute; top:610px; left:128px; width:1080px; font-family:Raleway, Arial, sans-serif; font-size:72px; font-weight:600; line-height:1.1; letter-spacing:-1px; color:#f5f3ee">Descubre el talento oculto de tu empresa y fidelízalo</h2>
+  <p data-build-in="fade 5 auto" style="position:absolute; top:872px; left:128px; width:1300px; font-family:Raleway, Arial, sans-serif; font-size:28px; font-weight:500; line-height:1.4; color:#bdbbb5">Para dirección de personas y dirección general</p>
+</section>
+
+<section class="slide" id="problema" data-transition="fade" style="background:#F9F9F9;color:#0D0D0D;font-family:'Raleway', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;line-height:1.2;color:#262628;background:#FFD557;padding:8px 20px;border-radius:40px">El problema</p></div>
+<h2 style="width:1664px;font-family:'Raleway', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;letter-spacing:-1.5px;color:#0D0D0D">La encuesta de clima sale en verde y la gente clave se sigue yendo</h2>
+<div data-build-in="rise 1 auto" style="position:absolute;left:128px;top:430px;width:1664px;height:490px;display:flex;gap:32px">
+<div style="flex:1;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#6B6B6B">Lo que dice el organigrama</p>
+<svg aria-label="Organigrama en árbol: dirección, tres mandos y nueve personas" width="700" height="300" viewBox="0 0 700 300"><g fill="none" stroke="#C9C6BF" stroke-width="2"><path d="M350 52 V85 M130 85 H570 M130 85 V118 M350 85 V118 M570 85 V118 M130 162 V198 M70 198 H190 M70 198 V234 M130 198 V234 M190 198 V234 M350 162 V198 M290 198 H410 M290 198 V234 M350 198 V234 M410 198 V234 M570 162 V198 M510 198 H630 M510 198 V234 M570 198 V234 M630 198 V234"/></g><g fill="#EDEBE6" stroke="#C9C6BF" stroke-width="2"><rect x="300" y="8" width="100" height="44" rx="8"/><rect x="80" y="118" width="100" height="44" rx="8"/><rect x="300" y="118" width="100" height="44" rx="8"/><rect x="520" y="118" width="100" height="44" rx="8"/><rect x="42" y="234" width="56" height="36" rx="6"/><rect x="102" y="234" width="56" height="36" rx="6"/><rect x="162" y="234" width="56" height="36" rx="6"/><rect x="262" y="234" width="56" height="36" rx="6"/><rect x="322" y="234" width="56" height="36" rx="6"/><rect x="382" y="234" width="56" height="36" rx="6"/><rect x="482" y="234" width="56" height="36" rx="6"/><rect x="542" y="234" width="56" height="36" rx="6"/><rect x="602" y="234" width="56" height="36" rx="6"/></g></svg>
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#4D4D4D">Cargos y líneas de mando</p>
+</div>
+<div style="flex:1;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#6B6B6B">Cómo funciona de verdad</p>
+<svg aria-label="Red de relaciones reales: tres personas clave, en miel, concentran las conexiones" width="700" height="300" viewBox="0 0 700 300"><g stroke="#D3D0C8" stroke-width="2" fill="none"><path d="M210 170 L140 200 M210 170 L120 270 M210 170 L250 120 M210 170 L300 230 M210 170 L60 180 M210 170 L80 90 M210 170 L350 170 M430 120 L330 95 M430 120 L470 40 M430 120 L350 170 M430 120 L450 190 M430 120 L520 140 M430 120 L260 60 M430 120 L600 90 M520 215 L450 190 M520 215 L580 270 M520 215 L640 180 M520 215 L390 250 M520 215 L520 140 M520 215 L600 90 M180 40 L260 60 M180 40 L80 90 M660 40 L600 90 M390 250 L300 230 M210 170 L430 120 M430 120 L520 215"/></g><g fill="#FFD557" opacity="0.4"><circle cx="210" cy="170" r="28"/><circle cx="430" cy="120" r="28"/><circle cx="520" cy="215" r="28"/></g><g fill="#262628"><circle cx="80" cy="90" r="8"/><circle cx="140" cy="200" r="8"/><circle cx="120" cy="270" r="7"/><circle cx="260" cy="60" r="8"/><circle cx="300" cy="230" r="8"/><circle cx="350" cy="170" r="9"/><circle cx="250" cy="120" r="7"/><circle cx="390" cy="250" r="8"/><circle cx="470" cy="40" r="7"/><circle cx="600" cy="90" r="9"/><circle cx="640" cy="180" r="7"/><circle cx="580" cy="270" r="8"/><circle cx="450" cy="190" r="8"/><circle cx="330" cy="95" r="7"/><circle cx="180" cy="40" r="7"/><circle cx="60" cy="180" r="7"/><circle cx="660" cy="40" r="7"/><circle cx="520" cy="140" r="8"/></g><g fill="#FFBF00" stroke="#262628" stroke-width="2"><circle cx="210" cy="170" r="15"/><circle cx="430" cy="120" r="15"/><circle cx="520" cy="215" r="15"/></g></svg>
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#4D4D4D">De quién depende todo, tenga cargo o no</p>
+</div>
+</div>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;align-items:center;gap:16px"><img src="assets/1bddd48b1c385c17c3aa6fa3116cbe56.svg" alt="" style="width:24px;height:24px;object-fit:contain"><p style="font-size:24px;font-weight:600;color:#6B6B6B">Beetrics Talent · Predictive Science for Smarter Organizations</p><div style="flex:1"></div><p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:24px;color:#6B6B6B">02 / 12</p></div>
+</section>
+
+<section class="slide" id="evitar" data-transition="push" style="background:#FFD557;color:#262628;font-family:'Raleway', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;line-height:1.2;color:#FFD557;background:#262628;padding:8px 20px;border-radius:40px">Se puede evitar</p></div>
+<h2 style="width:1664px;font-family:'Raleway', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;letter-spacing:-1.5px;color:#262628">Cuando la empresa se ocupa de fidelizar, se va menos gente</h2>
+<div data-build-in="rise 1 auto" style="position:absolute;left:128px;top:470px;width:1664px;display:flex;align-items:flex-end;gap:64px">
+<p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:200px;font-weight:700;line-height:1;letter-spacing:-6px;color:#262628;white-space:nowrap">20-25 %</p>
+<p style="flex:1;font-size:32px;font-weight:600;line-height:1.35;color:#262628">menos bajas voluntarias cuando la dirección pidió a sus mandos que se ocuparan de fidelizar a su equipo</p>
+</div>
+<p data-build-in="fade 2 auto" style="position:absolute;left:128px;top:790px;width:1500px;font-size:24px;font-weight:500;line-height:1.4;color:#4A3A00">Friebel, Heinz y Zubanov (2022), Management Science, 68(1). Experimento de campo en 238 centros de trabajo y 7.700 personas.</p>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;align-items:center;gap:16px"><p style="font-size:24px;font-weight:600;color:#4A3A00">Beetrics Talent · Predictive Science for Smarter Organizations</p><div style="flex:1"></div><p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:24px;color:#4A3A00">03 / 12</p></div>
+</section>
+
+<section class="slide" id="que-es" data-transition="fade" style="background:#F9F9F9;color:#0D0D0D;font-family:'Raleway', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;line-height:1.2;color:#262628;background:#FFD557;padding:8px 20px;border-radius:40px">Qué es Beetrics Talent</p></div>
+<h2 style="width:1664px;font-family:'Raleway', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;letter-spacing:-1.5px;color:#0D0D0D">Una encuesta cruza lo que cada persona vive, cuenta y lo que dicen de ella</h2>
+<div data-build-in="rise 1 auto" style="position:absolute;left:128px;top:430px;width:1664px;height:490px;display:flex;flex-direction:column;justify-content:space-between">
+<div style="display:flex;gap:32px">
+<div style="flex:1;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;align-items:center;gap:16px"><div style="width:56px;height:56px;border-radius:12px;background:#262628;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;width:32px;height:32px;color:#FFD557" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#6B6B6B">Lo que vive</p></div>
+<h3 style="font-size:44px;font-weight:800;line-height:1.2;color:#0D0D0D">Clima</h3>
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#4D4D4D">20 factores de su trabajo y la escala eNPS</p>
+</div>
+<div style="flex:1;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;align-items:center;gap:16px"><div style="width:56px;height:56px;border-radius:12px;background:#262628;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;width:32px;height:32px;color:#FFD557" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div><p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#6B6B6B">Lo que cuenta</p></div>
+<h3 style="font-size:44px;font-weight:800;line-height:1.2;color:#0D0D0D">Voz</h3>
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#4D4D4D">Dos preguntas abiertas, resumidas de forma anónima</p>
+</div>
+<div style="flex:1;background:#262628;border:1px solid #262628;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;align-items:center;gap:16px"><div style="width:56px;height:56px;border-radius:12px;background:#FFD557;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;width:32px;height:32px;color:#262628" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#BDBBB5">Lo que dicen de ella</p></div>
+<h3 style="font-size:44px;font-weight:800;line-height:1.2;color:#F5F3EE">Red</h3>
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#E4E2DC">A quién acude cada uno para liderar, innovar, resolver y pedir apoyo</p>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:24px">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;width:40px;height:40px;color:#262628" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+<p style="font-size:28px;font-weight:600;line-height:1.4;color:#262628">De 6 a 8 minutos desde el móvil. Sin integración con vuestros sistemas.</p>
+</div>
+</div>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;align-items:center;gap:16px"><img src="assets/1bddd48b1c385c17c3aa6fa3116cbe56.svg" alt="" style="width:24px;height:24px;object-fit:contain"><p style="font-size:24px;font-weight:600;color:#6B6B6B">Beetrics Talent · Predictive Science for Smarter Organizations</p><div style="flex:1"></div><p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:24px;color:#6B6B6B">04 / 12</p></div>
+</section>
+
+<section class="slide" id="funciona" data-transition="fade" style="background:#F3F1EC;color:#0D0D0D;font-family:'Raleway', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;line-height:1.2;color:#262628;background:#FFD557;padding:8px 20px;border-radius:40px">Cómo funciona</p></div>
+<h2 style="width:1664px;font-family:'Raleway', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;letter-spacing:-1.5px;color:#0D0D0D">Sin integraciones ni parar la planta: resultados en tres semanas</h2>
+<div data-build-in="rise 1 auto" style="position:absolute;left:128px;top:430px;width:1664px;height:490px;display:flex;align-items:center;gap:16px">
+<div style="flex:1;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:16px">
+<div style="width:48px;height:48px;border-radius:50%;background:#FFD557;display:flex;align-items:center;justify-content:center"><p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:24px;font-weight:700;color:#262628">1</p></div>
+<h3 style="font-size:32px;font-weight:800;line-height:1.2;color:#0D0D0D">Enviamos el enlace</h3>
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#4D4D4D">Por SMS o correo, sin instalar nada</p>
+</div>
+<svg width="48" height="24" viewBox="0 0 48 24" style="flex:none" aria-hidden="true"><path d="M0 12H44M34 4l10 8-10 8" fill="none" stroke="#262628" stroke-width="3"/></svg>
+<div style="flex:1;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:16px">
+<div style="width:48px;height:48px;border-radius:50%;background:#FFD557;display:flex;align-items:center;justify-content:center"><p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:24px;font-weight:700;color:#262628">2</p></div>
+<h3 style="font-size:32px;font-weight:800;line-height:1.2;color:#0D0D0D">Responden en 6 a 8 minutos</h3>
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#4D4D4D">Desde el móvil y en su idioma</p>
+</div>
+<svg width="48" height="24" viewBox="0 0 48 24" style="flex:none" aria-hidden="true"><path d="M0 12H44M34 4l10 8-10 8" fill="none" stroke="#262628" stroke-width="3"/></svg>
+<div style="flex:1;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:16px">
+<div style="width:48px;height:48px;border-radius:50%;background:#FFD557;display:flex;align-items:center;justify-content:center"><p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:24px;font-weight:700;color:#262628">3</p></div>
+<h3 style="font-size:32px;font-weight:800;line-height:1.2;color:#0D0D0D">Comparamos con España</h3>
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#4D4D4D">Por sector, tamaño y ocupación</p>
+</div>
+<svg width="48" height="24" viewBox="0 0 48 24" style="flex:none" aria-hidden="true"><path d="M0 12H44M34 4l10 8-10 8" fill="none" stroke="#262628" stroke-width="3"/></svg>
+<div style="flex:1;background:#262628;border:1px solid #262628;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:16px">
+<div style="width:48px;height:48px;border-radius:50%;background:#FFD557;display:flex;align-items:center;justify-content:center"><p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:24px;font-weight:700;color:#262628">4</p></div>
+<h3 style="font-size:32px;font-weight:800;line-height:1.2;color:#F5F3EE">Plan con dirección</h3>
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#E4E2DC">Qué hacer, con quién y en qué orden</p>
+</div>
+</div>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;align-items:center;gap:16px"><img src="assets/1bddd48b1c385c17c3aa6fa3116cbe56.svg" alt="" style="width:24px;height:24px;object-fit:contain"><p style="font-size:24px;font-weight:600;color:#6B6B6B">Beetrics Talent · Predictive Science for Smarter Organizations</p><div style="flex:1"></div><p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:24px;color:#6B6B6B">05 / 12</p></div>
+</section>
+
+<section class="slide" id="mapa" data-transition="fade" style="background:#F9F9F9;color:#0D0D0D;font-family:'Raleway', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;line-height:1.2;color:#262628;background:#FFD557;padding:8px 20px;border-radius:40px">El mapa real</p></div>
+<h2 style="width:1664px;font-family:'Raleway', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;letter-spacing:-1.5px;color:#0D0D0D">Ves quién lidera, quién innova y de quién depende cada equipo</h2>
+<div data-build-in="rise 1 auto" style="position:absolute;left:128px;top:430px;width:1664px;height:490px;display:flex;gap:48px">
+<div style="width:900px;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;padding:16px;display:flex;align-items:center;justify-content:center">
+<img src="assets/e487a97d1b5c203a963d8935174ac732.png" alt="Red de relaciones de una plantilla: los nodos grandes en miel son las personas más elegidas por sus compañeros" style="width:868px;height:456px;object-fit:contain">
+</div>
+<div style="flex:1;display:flex;flex-direction:column;justify-content:space-between">
+<div style="display:flex;align-items:center;gap:20px"><div style="width:56px;height:56px;border-radius:12px;background:#262628;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;width:32px;height:32px;color:#FFD557" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div style="display:flex;flex-direction:column;gap:2px"><h3 style="font-size:28px;font-weight:800;line-height:1.2;color:#0D0D0D">Líderes naturales</h3><p style="font-size:24px;font-weight:500;line-height:1.4;color:#4D4D4D">A quién siguen, tenga cargo o no</p></div></div>
+<div style="display:flex;align-items:center;gap:20px"><div style="width:56px;height:56px;border-radius:12px;background:#262628;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;width:32px;height:32px;color:#A4FF07" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></div><div style="display:flex;flex-direction:column;gap:2px"><h3 style="font-size:28px;font-weight:800;line-height:1.2;color:#0D0D0D">Innovadores</h3><p style="font-size:24px;font-weight:500;line-height:1.4;color:#4D4D4D">De quién salen las ideas</p></div></div>
+<div style="display:flex;align-items:center;gap:20px"><div style="width:56px;height:56px;border-radius:12px;background:#262628;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;width:32px;height:32px;color:#4388FF" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><div style="display:flex;flex-direction:column;gap:2px"><h3 style="font-size:28px;font-weight:800;line-height:1.2;color:#0D0D0D">Expertos</h3><p style="font-size:24px;font-weight:500;line-height:1.4;color:#4D4D4D">A quién acuden para resolver</p></div></div>
+<div style="display:flex;align-items:center;gap:20px"><div style="width:56px;height:56px;border-radius:12px;background:#262628;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;width:32px;height:32px;color:#9C4CFF" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div style="display:flex;flex-direction:column;gap:2px"><h3 style="font-size:28px;font-weight:800;line-height:1.2;color:#0D0D0D">Apoyo</h3><p style="font-size:24px;font-weight:500;line-height:1.4;color:#4D4D4D">En quién se apoyan cuando algo va mal</p></div></div>
+<p style="font-size:24px;font-weight:500;line-height:1.4;color:#6B6B6B">Red real de Familia Martínez, sin nombres</p>
+</div>
+</div>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;align-items:center;gap:16px"><img src="assets/1bddd48b1c385c17c3aa6fa3116cbe56.svg" alt="" style="width:24px;height:24px;object-fit:contain"><p style="font-size:24px;font-weight:600;color:#6B6B6B">Beetrics Talent · Predictive Science for Smarter Organizations</p><div style="flex:1"></div><p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:24px;color:#6B6B6B">06 / 12</p></div>
+</section>
+
+<section class="slide" id="clima" data-transition="push" style="background:#F3F1EC;color:#0D0D0D;font-family:'Raleway', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;line-height:1.2;color:#262628;background:#FFD557;padding:8px 20px;border-radius:40px">Tu clima, comparado</p></div>
+<h2 style="width:580px;font-family:'Raleway', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;letter-spacing:-1.5px;color:#0D0D0D">Sabes qué factores están peor que en empresas como la tuya</h2>
+<div style="flex:1"></div>
+<div style="width:560px;display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#4D4D4D">Cada factor frente a la media de España, con un semáforo: en la media, peor o mucho peor.</p>
+<p style="font-size:24px;font-weight:500;line-height:1.4;color:#6B6B6B">Vista de la plataforma con datos de demostración</p>
+</div>
+<div data-build-in="rise 1 auto" style="position:absolute;left:760px;top:128px;width:1032px;height:792px;display:flex;align-items:center">
+<div style="background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;padding:20px;box-shadow:0 8px 40px rgba(38,38,40,0.10)">
+<img src="assets/03693debc1bb400445611a2f5b404b1d.png" alt="Panel de clima laboral: cada factor con su puntuación, la media de España y un semáforo de en la media o peor" style="width:990px;height:513px;object-fit:contain">
+</div>
+</div>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;align-items:center;gap:16px"><img src="assets/1bddd48b1c385c17c3aa6fa3116cbe56.svg" alt="" style="width:24px;height:24px;object-fit:contain"><p style="font-size:24px;font-weight:600;color:#6B6B6B">Beetrics Talent · Predictive Science for Smarter Organizations</p><div style="flex:1"></div><p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:24px;color:#6B6B6B">07 / 12</p></div>
+</section>
+
+<section class="slide" id="fm-liderazgo" data-transition="fade" style="background:#F9F9F9;color:#0D0D0D;font-family:'Raleway', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;line-height:1.2;color:#262628;background:#FFD557;padding:8px 20px;border-radius:40px">Caso Familia Martínez · Liderazgo</p></div>
+<div style="position:absolute;left:1532px;top:112px;width:260px;height:72px;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:12px;display:flex;align-items:center;justify-content:center"><img src="assets/ae1efa8f5a4be0d86e9ca847674ab170.jpg" alt="Familia Martínez" style="width:228px;height:50px;object-fit:contain"></div>
+<h2 style="width:1664px;font-family:'Raleway', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;letter-spacing:-1.5px;color:#0D0D0D">Sus líderes reales estaban en la línea de producción, no en el organigrama</h2>
+<div data-build-in="rise 1 auto" style="position:absolute;left:128px;top:450px;width:1664px;display:flex;gap:32px">
+<div style="flex:1;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:120px;font-weight:700;line-height:1;letter-spacing:-3px;color:#0D0D0D;white-space:nowrap">7 de 10</p>
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#4D4D4D">de los líderes más reconocidos por sus compañeros no tenían ningún cargo</p>
+</div>
+<div style="flex:1;background:#262628;border:1px solid #262628;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:120px;font-weight:700;line-height:1;letter-spacing:-3px;color:#FFD557;white-space:nowrap">26</p>
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#E4E2DC">votos para la persona más elegida, una operaria. El mando más votado recibió 20.</p>
+</div>
+<div style="flex:1;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:120px;font-weight:700;line-height:1;letter-spacing:-3px;color:#0D0D0D;white-space:nowrap">87 %</p>
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#4D4D4D">de participación: 71 de 82 personas, en unos 5 minutos cada una</p>
+</div>
+</div>
+<p data-build-in="fade 2 auto" style="position:absolute;left:128px;top:860px;width:1664px;font-size:24px;font-weight:500;line-height:1.4;color:#6B6B6B">Familia Martínez, empresa de alimentación. 82 personas en 10 departamentos, 909 nominaciones.</p>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;align-items:center;gap:16px"><img src="assets/1bddd48b1c385c17c3aa6fa3116cbe56.svg" alt="" style="width:24px;height:24px;object-fit:contain"><p style="font-size:24px;font-weight:600;color:#6B6B6B">Beetrics Talent · Predictive Science for Smarter Organizations</p><div style="flex:1"></div><p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:24px;color:#6B6B6B">08 / 12</p></div>
+</section>
+
+<section class="slide" id="fm-dependencias" data-transition="fade" style="background:#F3F1EC;color:#0D0D0D;font-family:'Raleway', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;line-height:1.2;color:#262628;background:#FFD557;padding:8px 20px;border-radius:40px">Caso Familia Martínez · Dependencias</p></div>
+<div style="position:absolute;left:1532px;top:112px;width:260px;height:72px;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:12px;display:flex;align-items:center;justify-content:center"><img src="assets/ae1efa8f5a4be0d86e9ca847674ab170.jpg" alt="Familia Martínez" style="width:228px;height:50px;object-fit:contain"></div>
+<h2 style="width:1664px;font-family:'Raleway', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;letter-spacing:-1.5px;color:#0D0D0D">Unas pocas personas sostienen la operación y dos áreas apenas se hablan</h2>
+<div data-build-in="rise 1 auto" style="position:absolute;left:128px;top:450px;width:1664px;display:flex;gap:32px">
+<div style="flex:1;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:120px;font-weight:700;line-height:1;letter-spacing:-3px;color:#0D0D0D;white-space:nowrap">5</p>
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#4D4D4D">personas destacan a la vez en las cuatro redes: liderazgo, ideas, resolución y apoyo</p>
+</div>
+<div style="flex:1;background:#262628;border:1px solid #262628;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:120px;font-weight:700;line-height:1;letter-spacing:-3px;color:#FFD557;white-space:nowrap">31 %</p>
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#E4E2DC">de la plantilla acude a la misma persona experta para resolver problemas</p>
+</div>
+<div style="flex:1;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:16px">
+<p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:120px;font-weight:700;line-height:1;letter-spacing:-3px;color:#0D0D0D;white-space:nowrap">5 %</p>
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#4D4D4D">de las conexiones posibles entre Calidad y Producción existen: 21 de 396</p>
+</div>
+</div>
+<p data-build-in="fade 2 auto" style="position:absolute;left:128px;top:860px;width:1664px;font-size:24px;font-weight:500;line-height:1.4;color:#6B6B6B">Familia Martínez, empresa de alimentación. 71 respuestas y 909 nominaciones entre compañeros.</p>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;align-items:center;gap:16px"><img src="assets/1bddd48b1c385c17c3aa6fa3116cbe56.svg" alt="" style="width:24px;height:24px;object-fit:contain"><p style="font-size:24px;font-weight:600;color:#6B6B6B">Beetrics Talent · Predictive Science for Smarter Organizations</p><div style="flex:1"></div><p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:24px;color:#6B6B6B">09 / 12</p></div>
+</section>
+
+<section class="slide" id="clientes" data-transition="push" style="background:#F9F9F9;color:#0D0D0D;font-family:'Raleway', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;line-height:1.2;color:#262628;background:#FFD557;padding:8px 20px;border-radius:40px">Confían en Beetrics</p></div>
+<h2 style="width:1664px;font-family:'Raleway', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;letter-spacing:-1.5px;color:#0D0D0D">Empresas e instituciones de varios sectores ya han medido con nosotros</h2>
+<div data-build-in="rise 1 auto" style="position:absolute;left:128px;top:430px;width:1664px;display:grid;grid-template-columns:repeat(4, 1fr);gap:24px">
+<div style="height:150px;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;display:flex;align-items:center;justify-content:center"><img src="assets/8ee8f97efec69918a96fccf6b49a11c0.svg" alt="Nutai" style="width:260px;height:80px;object-fit:contain"></div>
+<div style="height:150px;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;display:flex;align-items:center;justify-content:center"><img src="assets/ae1efa8f5a4be0d86e9ca847674ab170.jpg" alt="Familia Martínez" style="width:280px;height:80px;object-fit:contain"></div>
+<div style="height:150px;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;display:flex;align-items:center;justify-content:center"><img src="assets/8ddfea8c1daa8351659db44aa8449d14.png" alt="Culligan" style="width:240px;height:88px;object-fit:contain"></div>
+<div style="height:150px;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;display:flex;align-items:center;justify-content:center"><img src="assets/7dba1d35f8726adc8a6af21ac623f0bc.png" alt="Universidad Politécnica de Madrid" style="width:122px;height:96px;object-fit:contain"></div>
+<div style="height:150px;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;display:flex;align-items:center;justify-content:center"><img src="assets/f1f5b2b7e8f19a71fb928a30af47366f.svg" alt="Universidad del País Vasco, EHU" style="width:260px;height:84px;object-fit:contain"></div>
+<div style="height:150px;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;display:flex;align-items:center;justify-content:center"><img src="assets/9ccc801787e8a1087a2aab0e197904fb.png" alt="Bet Solar" style="width:260px;height:72px;object-fit:contain"></div>
+<div style="height:150px;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;display:flex;align-items:center;justify-content:center"><img src="assets/9c347483b1edf4ad1bf44908541377ad.svg" alt="Jaippy" style="width:220px;height:72px;object-fit:contain"></div>
+<div style="height:150px;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;display:flex;align-items:center;justify-content:center"><img src="assets/9a91edab4c8623d6e51e38f8ab5f1b5a.png" alt="Scientists360" style="width:280px;height:40px;object-fit:contain"></div>
+</div>
+<div data-build-in="fade 2 auto" style="position:absolute;left:128px;top:820px;width:1664px;display:flex;align-items:center;gap:48px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#6B6B6B">Con el apoyo de</p>
+<img src="assets/07cad05c60291df64ee08dad38adc57d.png" alt="Lanzadera" style="width:246px;height:31px;object-fit:contain">
+<img src="assets/7aac979a03d62f1502c2d3e72602b42e.png" alt="IATEC, Universitat de València" style="width:200px;height:61px;object-fit:contain">
+</div>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;align-items:center;gap:16px"><img src="assets/1bddd48b1c385c17c3aa6fa3116cbe56.svg" alt="" style="width:24px;height:24px;object-fit:contain"><p style="font-size:24px;font-weight:600;color:#6B6B6B">Beetrics Talent · Predictive Science for Smarter Organizations</p><div style="flex:1"></div><p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:24px;color:#6B6B6B">10 / 12</p></div>
+</section>
+
+<section class="slide" id="confianza" data-transition="fade" style="background:#F3F1EC;color:#0D0D0D;font-family:'Raleway', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;line-height:1.2;color:#262628;background:#FFD557;padding:8px 20px;border-radius:40px">Ciencia y confianza</p></div>
+<h2 style="width:1664px;font-family:'Raleway', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;letter-spacing:-1.5px;color:#0D0D0D">Medimos con método científico y sin vigilar a nadie</h2>
+<div data-build-in="rise 1 auto" style="position:absolute;left:128px;top:400px;width:1664px;display:flex;gap:32px">
+<div style="flex:1;background:#FFFFFF;border:1px solid #E6E4DF;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:20px">
+<h3 style="font-size:44px;font-weight:800;line-height:1.2;color:#0D0D0D">Ciencia</h3>
+<div style="display:flex;align-items:center;gap:16px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;width:36px;height:36px;color:#262628" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><p style="font-size:28px;font-weight:500;line-height:1.4;color:#262628">Método diseñado por un doctor en Psicología</p></div>
+<div style="display:flex;align-items:center;gap:16px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;width:36px;height:36px;color:#262628" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><p style="font-size:28px;font-weight:500;line-height:1.4;color:#262628">Investigación en Nature Reviews Psychology y Cambridge</p></div>
+<div style="display:flex;align-items:center;gap:16px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;width:36px;height:36px;color:#262628" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><p style="font-size:28px;font-weight:500;line-height:1.4;color:#262628">Nacido en la Universitat de València</p></div>
+<div style="display:flex;align-items:center;gap:16px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;width:36px;height:36px;color:#262628" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><p style="font-size:28px;font-weight:500;line-height:1.4;color:#262628">Comparación con España por sector y tamaño</p></div>
+</div>
+<div style="flex:1;background:#262628;border:1px solid #262628;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:20px">
+<h3 style="font-size:44px;font-weight:800;line-height:1.2;color:#F5F3EE">Confianza</h3>
+<div style="display:flex;align-items:center;gap:16px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;width:36px;height:36px;color:#FFD557" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><p style="font-size:28px;font-weight:500;line-height:1.4;color:#E4E2DC">Ningún directivo ve lo que ha respondido cada persona</p></div>
+<div style="display:flex;align-items:center;gap:16px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;width:36px;height:36px;color:#FFD557" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><p style="font-size:28px;font-weight:500;line-height:1.4;color:#E4E2DC">Clima solo en grupos de 5 personas o más</p></div>
+<div style="display:flex;align-items:center;gap:16px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;width:36px;height:36px;color:#FFD557" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><p style="font-size:28px;font-weight:500;line-height:1.4;color:#E4E2DC">La IA solo resume las respuestas abiertas, y se puede desactivar</p></div>
+<div style="display:flex;align-items:center;gap:16px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;width:36px;height:36px;color:#FFD557" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg><p style="font-size:28px;font-weight:500;line-height:1.4;color:#E4E2DC">Sin integraciones y conforme al RGPD</p></div>
+</div>
+</div>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;align-items:center;gap:16px"><img src="assets/1bddd48b1c385c17c3aa6fa3116cbe56.svg" alt="" style="width:24px;height:24px;object-fit:contain"><p style="font-size:24px;font-weight:600;color:#6B6B6B">Beetrics Talent · Predictive Science for Smarter Organizations</p><div style="flex:1"></div><p style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:24px;color:#6B6B6B">11 / 12</p></div>
+</section>
+
+<section class="slide" id="cierre" data-transition="fade" style="background:#262628;color:#F5F3EE;font-family:'Raleway', Arial, sans-serif;padding:128px">
+<iframe style="position:absolute;left:0;top:0;width:1920px;height:1080px;border:0;pointer-events:none" srcdoc="&lt;canvas id=&quot;c&quot; style=&quot;position:fixed;left:0;top:0;width:100%;height:100%&quot;&gt;&lt;/canvas&gt;&lt;script&gt;
+document.documentElement.style.background=&#x27;transparent&#x27;;document.body.style.margin=&#x27;0&#x27;;document.body.style.overflow=&#x27;hidden&#x27;;document.body.style.background=&#x27;transparent&#x27;;
+var c=document.getElementById(&#x27;c&#x27;),g=c.getContext(&#x27;2d&#x27;),W,H,R=window.devicePixelRatio||1,P=[],K=[&#x27;#FFD557&#x27;,&#x27;#FFD557&#x27;,&#x27;#FFD557&#x27;,&#x27;#A4FF07&#x27;,&#x27;#4388FF&#x27;,&#x27;#9C4CFF&#x27;,&#x27;#F5F3EE&#x27;,&#x27;#F5F3EE&#x27;];
+function sz(){W=innerWidth;H=innerHeight;c.width=W*R;c.height=H*R;g.setTransform(R,0,0,R,0,0)}sz();addEventListener(&#x27;resize&#x27;,sz);
+for(var i=0;110&gt;i;i++){var big=(i%13===0);P.push({x:W*(0.32+0.68*Math.sqrt(Math.random())),y:Math.random()*H,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,r:big?7+Math.random()*4:1.6+Math.random()*3,k:big?&#x27;#FFD557&#x27;:K[i%K.length],t:Math.random()*6.28})}
+function f(){g.clearRect(0,0,W,H);var i,j,a,b,dx,dy,d;for(i=0;P.length&gt;i;i++){a=P[i];a.x+=a.vx;a.y+=a.vy;a.t+=.018;if(W*.24&gt;a.x||a.x&gt;W)a.vx*=-1;if(0&gt;a.y||a.y&gt;H)a.vy*=-1}
+g.lineWidth=1.2;for(i=0;P.length&gt;i;i++)for(j=i+1;P.length&gt;j;j++){a=P[i];b=P[j];dx=a.x-b.x;dy=a.y-b.y;d=dx*dx+dy*dy;if(34000&gt;d){g.strokeStyle=&#x27;rgba(245,243,238,&#x27;+(.16*(1-d/34000)).toFixed(3)+&#x27;)&#x27;;g.beginPath();g.moveTo(a.x,a.y);g.lineTo(b.x,b.y);g.stroke()}}
+for(i=0;P.length&gt;i;i++){a=P[i];g.globalAlpha=.7+.3*Math.sin(a.t);g.fillStyle=a.k;g.shadowColor=a.k;g.shadowBlur=a.r&gt;6?28:10;g.beginPath();g.arc(a.x,a.y,a.r,0,6.283);g.fill()}g.globalAlpha=1;g.shadowBlur=0;requestAnimationFrame(f)}f();
+&lt;/script&gt;" aria-hidden="true" tabindex="-1"></iframe>
+<div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:linear-gradient(90deg, rgba(38,38,40,0.98) 0%, rgba(38,38,40,0.9) 45%, rgba(38,38,40,0) 82%)"></div>
+<img src="assets/f84dbeeab3fe8aa9a6dc7dd25ffc8374.svg" alt="Beetrics" style="position:absolute;left:128px;top:200px;width:300px;height:80px;object-fit:contain">
+<p style="position:absolute;left:128px;top:320px;width:1000px;font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#FFD557">Siguiente paso</p>
+<h2 data-build-in="rise 1 auto" style="position:absolute;left:128px;top:370px;width:1100px;font-family:'Raleway', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;letter-spacing:-1.5px;color:#F5F3EE">Empezamos por una planta o un equipo y lo vemos juntos</h2>
+<div data-build-in="fade 2 auto" style="position:absolute;left:128px;top:620px;width:1000px;display:flex;flex-direction:column;gap:8px;border-left:3px solid #FFD557;padding:4px 0 4px 32px">
+<p style="font-size:32px;font-weight:700;line-height:1.3;color:#F5F3EE">Víctor Ciudad-Fernández <span style="color:#BDBBB5">· CEO y fundador</span></p>
+<p style="font-size:28px;font-weight:600;line-height:1.4;color:#FFD557">victor.ciudad@beetrics.com</p>
+<p style="font-size:28px;font-weight:500;line-height:1.4;color:#BDBBB5">+34 662 23 05 45 · beetrics.com</p>
+</div>
+<p data-build-in="fade 3 auto" style="position:absolute;left:128px;top:880px;width:1200px;font-size:24px;font-weight:600;letter-spacing:2px;color:#BDBBB5">Beetrics · Scientific Precision for Accurate Management</p>
+</section>
+
+</div></div>
+<div id="nav">
+<button id="prev" aria-label="Diapositiva anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg></button>
+<span id="count" aria-live="polite"></span>
+<button id="next" aria-label="Diapositiva siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></button>
+<button id="fs" aria-label="Pantalla completa"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M16 21h3a2 2 0 0 0 2-2v-3"/></svg></button>
+</div>
+<script>
+(function(){
+var s=[].slice.call(document.querySelectorAll('.slide')),deck=document.getElementById('deck'),i=0;
+function fit(){var k=Math.min(innerWidth/1920,innerHeight/1080);deck.style.transform='scale('+k+')'}
+function go(n){n=Math.max(0,Math.min(s.length-1,n));s[i].classList.remove('on');i=n;s[i].classList.add('on');
+document.getElementById('count').textContent=(i+1)+' / '+s.length;try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
+var h=parseInt(location.hash.slice(1),10);if(h>0)i=h-1;i=Math.min(i,s.length-1);s[i].classList.add('on');go(i);
+fit();addEventListener('resize',fit);
+document.getElementById('prev').onclick=function(){go(i-1)};
+document.getElementById('next').onclick=function(){go(i+1)};
+document.getElementById('fs').onclick=function(){var d=document.documentElement;if(document.fullscreenElement)document.exitFullscreen();else if(d.requestFullscreen)d.requestFullscreen()};
+addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' ','Enter'].indexOf(e.key)>-1){e.preventDefault();go(i+1)}
+else if(['ArrowLeft','PageUp','Backspace'].indexOf(e.key)>-1){e.preventDefault();go(i-1)}else if(e.key==='Home')go(0);else if(e.key==='End')go(s.length-1)});
+var x0=null;addEventListener('touchstart',function(e){document.body.classList.add('touch');x0=e.touches[0].clientX},{passive:true});
+addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)go(i+(dx<0?1:-1));x0=null});
+document.getElementById('stage').addEventListener('click',function(e){if(e.target.closest('a'))return;go(i+(e.clientX>innerWidth/3?1:-1))});
+})();
+</script>
+</body>
+</html>
