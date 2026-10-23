@@ -26,6 +26,7 @@ html,body{margin:0;height:100%;background:#1b1b1d;overflow:hidden;font-family:Ra
 @keyframes rise{from{opacity:0;translate:0 24px}to{opacity:1;translate:0 0}}
 @keyframes fade{from{opacity:0}to{opacity:1}}
 @media (prefers-reduced-motion:reduce){.slide.on [data-build-in]{animation:none}.slide{transition:none}}
+@media print{@page{size:1920px 1080px;margin:0}html,body{height:auto;overflow:visible;background:none}#stage{position:static;display:block}#deck{transform:none!important;height:auto}.slide{position:relative!important;visibility:visible;opacity:1;break-after:page}.slide [data-build-in]{animation:none!important}#nav{display:none!important}.slide:last-child{break-after:auto}}
 #nav{position:fixed;left:50%;bottom:16px;translate:-50% 0;display:flex;align-items:center;gap:8px;padding:6px;border-radius:999px;background:rgba(38,38,40,.82);color:#F5F3EE;font:500 14px/1 'IBM Plex Sans',Arial,sans-serif;backdrop-filter:blur(6px);opacity:.25;transition:opacity .2s}
 #nav:hover,#nav:focus-within,body.touch #nav{opacity:1}
 #nav button{all:unset;cursor:pointer;width:36px;height:36px;border-radius:50%;display:grid;place-items:center}
